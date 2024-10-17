@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./RockPaperScissor.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="./17291412203384sa3h2p-voicemaker.in-speech.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    <div id="main-div" class="centered-div" onclick="play(event)">
+        <h1>Rock Paper Scissor</h1>
+        <div id="rockPaper" style="display: flex;justify-content: center;">
+            <button>
+                <img class="round-image" id="rock" style="height: 100px;" src="https://www.shutterstock.com/image-photo/stone-on-white-background-260nw-1187945116.jpg" alt="">
+            </button>
+            <button>
+                <img class="round-image" id="paper" style="height: 100px;" src="https://cdn.pixabay.com/photo/2016/10/23/15/47/paper-1763262_640.png" alt="">
+            </button>
+        </div>
+        <div>
+            <button>
+                <img class="round-image" id="scissor" style="height: 100px;" src="https://img.freepik.com/premium-vector/red-scissors-flat-style-vector-illustration_1058532-23954.jpg" alt="">
+            </button>
+        </div>
+        You choose : <h4 id="my-option"></h4>
+        Computer choose : <h4 id="computer-option"></h4>
+       <h1 id="result">You win!!</h1>
+    </div>
+    <script src="./RockPaperScissor.js"></script>
+</body>
+</html>
